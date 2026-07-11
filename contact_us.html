@@ -3,22 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        header {
+            background-color: #121212;
+            margin: 0;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        header h1 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-size: 3em;
+            margin-bottom: 59.67px;
+            letter-spacing: 5px;
+            color: #F8F9FA;
+            color: #F8F9FA;
+            text-decoration: underline;
+            text-underline-offset: 25px;
+            text-decoration-thickness: 2px;
+            text-decoration-color: #00D2FF;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 300px;
+            justify-content: space-between;
+            gap: 10px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-family: Montserrat;
+            color: #121212;
+            font-weight: bold;
+        }
+
+        form input {
+            border-radius: 8px;
+            height: 25px;
+            border: 2px solid #00D2FF;
+        }
+
+        form textarea {
+            border-radius: 8px;
+            height: 50px;
+            border: 2px solid #00D2FF;
+            
+        }
+
+        form button {
+            background-color: #00D2FF;
+            background-color: #0055FF;
+            background-color: #121212;
+            color: #F8F9FA;
+            width: 100px;
+            height: 35px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+
+    </style>
 </head>
 <body>
     
     <header>
         <nav>
-            <a href="index.html">DB Sound Works</a>
+            <a href="index.html" id="title-button">DB Sound Works</a>
             <div id="nav-buttons">
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="">Contact Us</a>
             </div>
         </nav>
-        <img src="images/Screenshot 2026-07-04 135305.jpg" alt="DB Logo">
+        <h1>Contact Us</h1>
     </header>
 
     <main>
+        
         <form>
 
             <label>Name:</label>
@@ -26,21 +107,27 @@
 
             <label>Email:</label>
             <input type="email" id="email" name="email">
-            
+                
             <label>Phone Number:</label>
             <input type="tel" id="phone" name="phone">
 
             <label>What is Your Vehicle? (Year, Make, Model):</label>
             <textarea id="vehicle" name="vehicle"></textarea>
 
+            <label>How Can We Help You?:</label>
+            <textarea id="help" name="help"></textarea>
+
             <button type="submit" id="submit">Submit</button>
 
         </form>
+
     </main>
 
     <footer>
-        <h3>DB Sound Works</h3>
-        <img src="images/Screenshot 2026-07-04 135305.jpg" alt="logo">
+        <a href="index.html" id="title-footer">DB Sound Works</a>
+        <a href="index.html" id="footer-img">
+            <img src="images/Screenshot 2026-07-04 135305.jpg" alt="logo">
+        </a>
     </footer>
 
 </body>

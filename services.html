@@ -3,12 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <title>Services</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: Montserrat;
+        }
+
+        p {
+            font-family: Inter;
+        }
+
+        header {
+            background-color: #121212;
+            margin: 0;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header h1 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-size: 3em;
+            margin-bottom: 59.67px;
+            letter-spacing: 5px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 25px 0;
+        }
+
+        header #nav-buttons{
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #F8F9FA;
+            font-family: Montserrat;
+            transition: 0.3s ease;
+            font-size: 16px;
+        }
+
+        header nav #title-button {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        /* nav #title-button:hover {
+            font-weight: bold;
+        } */
+
+        header nav #nav-buttons a {
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        header nav #nav-buttons a:hover {
+            background-color: #F8F9FA;
+            color: #121212;
+            font-weight: bold;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: #F8F9FA;
+            text-decoration: underline;
+            text-underline-offset: 25px;
+            text-decoration-thickness: 2px;
+            text-decoration-color: #00D2FF;
+        }
+
+        /* main styles */
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 75px 0px;
+            background-color: #F8F9FA;
+        }
+
+        .card img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        .card h2 {
+            color: #121212;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            text-align: center;
+            line-height: 2;
+            width: 300px;
+            gap: 25px;
+        }
+
+
+        /* footer styles */
+
+        footer img {
+            width: 120px;
+            height: 75px;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #121212;
+            color: white;
+            align-items: center;
+            height: 100px;
+            padding: 0px 25px;
+        }
+
+        footer #title-footer:hover {
+            font-weight: bold;
+        }
+
+        /* footer img {
+            border: 2px solid #121212;
+            transition: 0.3s ease; 
+        }
+
+        footer img:hover {
+            border-color: #F8F9FA;
+        } */
+
+    </style>
+
 </head>
+
 <body>
     
     <header>
         <nav>
-            <a href="index.html">DB Sound Works</a>
+            <a href="index.html" id="title-button">DB Sound Works</a>
             <div id="nav-buttons">
                 <a href="index.html">Home</a>
                 <a href="">Services</a>
@@ -22,20 +178,25 @@
         <div class="card">
             <img src="images/subwoofer_installs.jpg" alt="subwoofer install image">
             <h2>Subwoofer Installs</h2>
+            <p>Does your vehicle lack bass? Add a subwoofer to enhance the low end in your music</p>
         </div>
         <div class="card">
             <img src="images/headunit_upgrades.jpg" alt="head unit upgrades image">
             <h2>Headunit Upgrades</h2>
+            <p>By upgrading your radio you can enjoy features such as Apple Carplay/Android Auto and view apps such as Spotify or Google Maps</p>
         </div>
         <div class="card">
             <img src="images/speaker_replacements.jpg" alt="speaker replacement image">
             <h2>Speaker Replacements</h2>
+            <p>Upgrade to aftermarket speakers to achieve better midbass and clearer vocals</p>
         </div>
     </main>
 
     <footer>
-        <h3>DB Sound Works</h3>
-        <img src="images/Screenshot 2026-07-04 135305.jpg" alt="logo">
+        <a href="index.html" id="title-footer">DB Sound Works</a>
+        <a href="index.html" id="footer-img">
+            <img src="images/Screenshot 2026-07-04 135305.jpg" alt="logo">
+        </a>
     </footer>
 
 </body>

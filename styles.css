@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat;
+    color: #121212
+}
+
+p {
+    font-family: Inter;
+    color: #121212
+}
+
+/* Header styles */
+
+header {
+    background-color: #121212;
+    margin: 0;
+    padding-bottom: 75px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px 0;
+}
+
+header #nav-buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #F8F9FA;
+    font-family: Montserrat;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+header nav #title-button {
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* nav #title-button:hover {
+    font-weight: bold;
+    color: #F8F9FA;
+} */
+
+header nav #nav-buttons a {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+header nav #nav-buttons a:hover {
+    background-color: #F8F9FA;
+    color: #121212;
+    font-weight: bold;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 400px;
+    height: 225px;
+    display: block;
+    justify-self: center;
+    border-radius: 10px;
+    margin-top: 45px;
+}
+
+/* main styles */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 75px;
+    background-color: #F8F9FA;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2, p {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    line-height: 2;
+    gap: 25px;
+}
+
+.card .card-text {
+    color: #121212;
+}
+
+/* footer styles */
+
+footer img {
+    width: 120px;
+    height: 75px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    color: #F8F9FA;
+    align-items: center;
+    height: 100px;
+    padding: 0px 25px;
+}
+
+footer #title-footer:hover {
+    font-weight: bold;
+    color: #F8F9FA
+}
+
+/* footer img {
+    border: 2px solid #121212;
+    transition: 0.3s ease; 
+}
+
+footer img:hover {
+    border-color: #F8F9FA;
+} */
