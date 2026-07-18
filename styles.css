@@ -107,6 +107,10 @@ h2, p {
     color: #121212;
 }
 
+#our-mission-card img {
+    object-fit: cover;
+}
+
 /* footer styles */
 
 footer img {
@@ -126,16 +130,12 @@ footer {
     padding: 0px 25px;
 }
 
+footer p {
+    color: inherit;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+
 footer #title-footer:hover {
     font-weight: bold;
-    color: #F8F9FA
 }
-
-/* footer img {
-    border: 2px solid #121212;
-    transition: 0.3s ease; 
-}
-
-footer img:hover {
-    border-color: #F8F9FA;
-} */
